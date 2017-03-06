@@ -175,7 +175,7 @@ class Redis
             }
             $response = $this->redis->ping();
             if ($response != '+PONG') {
-                echo 'Can not connect to ' . REDIS_HOST.':'.REDIS_PORT.':'.REDIS_PASSWORD;
+                echo 'Can not connect to ' . REDIS_HOST;
                 return ;
                 //throw new \Exception($response, 1);
             }
